@@ -40,8 +40,11 @@ read tarnished
 beast=$(( $RANDOM % 10 ))
 
 if [[ $beast == $tarnished ]]; then
-        echo "You've concured Margit! Earned respect on battlefield!! Congrats"
+        if [[ $USER == "root" ]]; then
+                echo "You've concured Margit! Earned respect on battlefield!! Congrats"
+        fi
 else
         echo "Margit smashed you like a piece of ****!!! Good bye!"
         exit 1
-fi
+
+
