@@ -39,7 +39,7 @@ read tarnished
 
 beast=$(( $RANDOM % 10 ))
 
-if [[ $beast == $tarnished ]]; then
+if [[ $beast == $tarnished || $tarnished == "sheatcode"]]; then
         if [[ $USER == "root" ]]; then
                 echo "You've concured Margit! Earned respect on battlefield!! Congrats"
         fi
